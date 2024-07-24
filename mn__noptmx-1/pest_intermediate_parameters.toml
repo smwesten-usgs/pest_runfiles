@@ -1,0 +1,55 @@
+# OK, the concept here is that we use pest++ to estimate metaparameters (intermediate parameters?), 
+# which then get processed by a little Python script to produce the numerical values that SWB2
+# actually sees and processes. The idea is that this Python script would allow for some degree
+# of structure to be imposed on the resulting SWB2 parameter values. For example, the 
+# curve number aligner would be used to take the pest++ generated curve numbers for the 
+# appropriate 'a' soils and produce the values needed for 'b', 'c', and 'd' soils, as well as the 
+# mixed soil classes. Recall that our current thinking is that if the landuse is agricultural in nature,
+# it is highly likely that the soils are in the 'drained' condition; conversely, if the landuse is 
+# 'natural' it is likely 'undrained' (a 'D' soil).)
+
+[curve_numbers]
+corn = 50.35366048952687
+soybn = 62.03609048101755
+alfalf = 62.421723105566606
+smgrn = 51.66826051447795
+decfrst = 45.16063021398973
+evfrst = 59.638120790525065
+mixfrst = 40.70636153006205
+pasture = 40.32101788329213
+wdwetl = 54.14688030570517
+hbwetl = 32.6530845063513
+
+[rooting_depths]
+corn = 1.0388449880242103
+soybn = 1.6738700556950397
+alfalf = 3.727037751263639
+smgrn = 1.1431689044517843
+decfrst = 3.139708058485419
+evfrst = 1.8260242387938144
+mixfrst = 3.4982791593233773
+pasture = 3.2819773152289637
+wdwetl = 3.778244346255823
+hbwetl = 2.0250236112679816
+
+[max_net_infiltration]
+corn = 2.368630584520007
+soybn = 4.31083097137883
+alfalf = 4.496980154969501
+smgrn = 4.532698897517038
+decfrst = 3.9845097916604773
+evfrst = 2.9362936317492716
+mixfrst = 2.584047383201158
+pasture = 4.513414791637947
+wdwetl = 3.6207161458709853
+hbwetl = 2.0990959627421044
+
+[max_net_infiltration_multipliers]
+max_net_infil_mult_ab = 0.45514819759660563
+max_net_infil_mult_ac = 0.1091434640274503
+max_net_infil_mult_ad = 0.07819629503613891
+
+[rooting_depth_multipliers]
+rooting_depth_mult_ab = 1.1400910447439037
+rooting_depth_mult_ac = 0.9581919578868503
+rooting_depth_mult_ad = 0.8922120633967329

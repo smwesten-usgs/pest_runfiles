@@ -1,0 +1,20 @@
+pcf version=2
+* control data keyword
+pestmode                                 estimation
+noptmax                                 0
+svdmode                                 1
+maxsing                          10000000
+eigthresh                           1e-06
+eigwrite                                1
+* parameter groups external
+mn__noptmx0.pargp_data.csv
+* parameter data external
+mn__noptmx0.par_data.csv
+* observation data external
+mn__noptmx0.obs_data.csv
+* model command line
+./00_swb_forward_run.sh
+* model input external
+mn__noptmx0.tplfile_data.csv
+* model output external
+mn__noptmx0.insfile_data.csv

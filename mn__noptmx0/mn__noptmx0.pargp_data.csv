@@ -1,0 +1,7 @@
+pargpnme,inctyp,derinc,derinclb,forcen,derincmul,dermthd,splitthresh,splitreldiff,splitaction
+l-mid-length,relative,0.01,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
+plant-date,relative,0.01,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
+growing-season-interception,relative,0.01,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
+base-cn,relative,0.01,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
+base-max-ni,relative,0.01,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
+base-rz,relative,0.01,0.0,switch,2.0,parabolic,1e-05,0.5,smaller
